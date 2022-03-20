@@ -8,6 +8,7 @@
 ### Steps
 
 1. Prerequisites
+
 You should have git and a terminal (CLI).
 On Windows, use the git bash cli that comes with git for Windows.
 On macOS or Linux, the built-in one should be fine.
@@ -17,6 +18,7 @@ git version
 ```
 
 2. Init and config
+
 Create a directory, initialise a local git repository and configure git (check if e-mail is configured, otherwise, configure it).
 
 The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
@@ -31,6 +33,7 @@ git config --global user.email "Your email"
 [Init](https://github.com/git-guides/git-init)
 
 3. Help
+
 Use documentation and git community.
 If you are having trouble remembering commands or options for commands, you can use Git help.
 ```
@@ -40,6 +43,7 @@ git help add
 ```
 
 4. Add changes
+
 Create text files, add content.
 
 When in doubt, run git status. This is always a good idea. The git status command only outputs information, it won't modify commits or changes in your local repository.
@@ -60,6 +64,7 @@ git add .
 [Staging](https://git-scm.com/about/staging-area)
 
 5. Commit changes
+
 Commit your changes.
 
 git commit creates a commit, which is like a snapshot of your repository. These commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change.
@@ -77,6 +82,7 @@ git diff
 [Commit](https://github.com/git-guides/git-commit)
 
 6. Branches
+
 Create a branch, create a new file, commit the change.
 Change back to previous branch, verify that the new file is not there.
 Compare the git log on the branches.
@@ -112,6 +118,7 @@ A head is simply a reference to a commit object. Each head has a name (branch na
 Note this difference: a “head” (lowercase) refers to any one of the named heads in the repository; “HEAD” (uppercase) refers exclusively to the currently active head. This distinction is used frequently in Git documentation.
 
 8. Cherry-picking
+
 Commit a change to the wrong branch.
 Switch to the correct branch and cherry-pick the commit to where it should belong.
 
@@ -124,6 +131,7 @@ git cherry-pick <commit hash>
 [Cherry-pick](https://www.atlassian.com/git/tutorials/cherry-pick)
 
 9. Reset changes
+
 Add faulty commit. Reset it.
 
 The git reset command is a complex and versatile tool for undoing changes.
@@ -143,6 +151,7 @@ git reset <commit hash>
 [Reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 
 10. Amend changes
+
 Make a change and stage it.
 You can use amend to add this change to the previous commit.
 
@@ -155,6 +164,7 @@ git commit --amend
 [Commit --amend](https://www.atlassian.com/git/tutorials/rewriting-history)
 
 11. Stashing
+
 Make a change and hide it.
 
 ```
@@ -167,6 +177,7 @@ git stash temporarily shelves (or stashes) changes you've made to your working c
 [Stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
 
 12. Merging
+
 Merge branches to the main branch.
 
 ```
@@ -200,7 +211,7 @@ Check [Playground](https://learngitbranching.js.org) lesson level move2.
 
 1. Play around with Git by yourself. It is a powerful tool and is a must for every engineer.
 There are plenty of features and in many cases there are multiple ways to solve the same problem.
-Git is not scary! Be brave, use Git! 
+Git is not scary! Be brave, use Git!
 2. Do lessons from the [Playground](https://learngitbranching.js.org)
 3. Create account in GitHub
 4. Push the projects you've done or you are working on to GitHub repositories!
